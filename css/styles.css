@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+body{
+    overflow-x: hidden;
+}
+ .header {
+    padding: 4.8rem;
+    height:  10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #224092;
+    position: fixed;
+    width: 100%;
+      
+}
+.header .logo {
+    /* mix-blend-mode: multiply; */
+    height: 4rem;
+}
+.logo-banner{
+    padding-top: 2%;
+}
+.navbar-list{
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+.navbar-link:link,.navbar-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbar-link:hover , .navbar-link:active{
+    color: rgb(129, 243, 237);
+}
+
+
+.section-banner p{
+    color: aliceblue;
+    font-size: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    
+}
+
+.section-banner a  :hover {
+    color: rgb(168, 225, 233);
+    transition: all 0.5s;
+    font-size: 13px;
+}
+.banner-button {
+    display: inline-block;
+
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: #224092;
+    border-radius: 0.9rem;
+    transition: background-color 0.3s;
+   
+}
+
+.banner-button:hover {
+    background-color: rgba(51, 189, 182, 0.747);
+    transition: all 0.5s;
+    font-size: 22px;
+}
+
+
+a{
+    text-decoration: none;
+}
+.section-banner {
+    padding: 9.6rem;
+    background-color: rgb(168, 225, 233);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section-contacts{
+    padding: 9.6rem;
+    background-color: rgb(168, 225, 233);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section-contacts {
+    background-color: #224092;
+    padding: 20px;
+    font-size: large;
+    color: white;
+  }
+ 
+  
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item ion-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-item p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .section-contacts {
+      padding: 10px;
+    }
+    
+    .contact-item {
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+    
+    .contact-item ion-icon {
+      font-size: 20px;
+    }
+    
+    .contact-item p {
+      font-size: 14px;
+    }
+    
+    .whatsapp-button {
+      font-size: 10px;
+      padding: 4px;
+    }
+    .insta-button {
+        font-size: 10px;
+        padding: 4px;
+    }
+  }
+  
+  .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-item p {
+    margin: 0;
+    gap: 1rem;
+  }
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .insta-button {
+    display: flex;
+    align-items: center;
+    background-color: #ec5dec;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .whatsapp-button i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .whatsapp-button span {
+    font-size: 12px;
+  }
+  .insta-button  {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .insta-button span {
+    font-size: 12px;
+  }
+  
+
+.section-banner p{
+    font-size: 3.2rem;
+    padding-bottom: 25px;
+    
+}
+.section-banner {
+    background-image: url("../banner.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* align-items: center; */
+    
+    
+    
+    
+}
+
+
+.mobile-nav-icon{
+    width: 4rem;
+    height: 4rem;
+}
+
+.mobile-navbar-button{
+    color: white;
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+
+}
+
+
+@media(max-width:62em){
+    .mobile-navbar-button{
+        display: block;
+        z-index: 999;
+        
+    }
+    .header{
+        position: relative;
+    }
+     .logo {
+        
+        width: 23%;
+        height: auto;
+    }
+    .navbar{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* transition  */
+        transform: translateX(100%);
+        transition: all 0.5s;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+          
+
+    }
+    
+    
+    @media (max-width: 768px) {
+        .section-banner {
+          padding: 60px 20px;
+          text-align: center;
+        }
+        .contact-banner{
+           align-items: center;
+          text-align: center;
+
+        }
+      
+        .banner {
+          max-width: 320px;
+          margin: 0 auto;
+        }
+      
+        .logo-banner {
+          width: 180px;
+        }
+      
+        .banner p {
+          font-size: 18px;
+          margin-top: 20px;
+        }
+      
+        .banner-button {
+          font-size: 16px;
+          padding: 12px 24px;
+        }
+      }
+      
+  
+
+    .navbar-list{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+    .active .mobile-navbar-button .mobile-nav-icon[name="menu-outline"]{
+        display: none;
+    }
+    .active .mobile-navbar-button .mobile-nav-icon[name="close-outline"]{
+        display: block;
+        color: #224092;
+    }
+   
+    .navbar-link:link,.navbar-link:visited{
+        color: #224092;
+        transition: all 0.3s;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
